@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tonja Music | Live-Musik für Hochzeiten &amp; besondere Momente</title>
+<meta name="description" content="Tonja begleitet eure Hochzeit mit Gitarre und ausdrucksvoller Stimme. Persönliche Live-Musik für Trauung, Sektempfang und besondere Momente in Nürnberg und Umgebung.">
+<meta property="og:title" content="Tonja Music | Live-Musik für Hochzeiten">
+<meta property="og:description" content="Eure Geschichte verdient ihren eigenen Klang. Tonja begleitet eure Hochzeit live mit Stimme und Gitarre.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Nunito+Sans:wght@400;600;700;800;900&display=swap">
+<style>:root {
+  --background: oklch(0.973 0.013 74);
+  --foreground: oklch(0.31 0.023 39);
+  --card: oklch(0.989 0.007 78);
+  --card-foreground: oklch(0.31 0.023 39);
+  --popover: oklch(0.989 0.007 78);
+  --popover-foreground: oklch(0.31 0.023 39);
+  --primary: oklch(0.47 0.065 20);
+  --primary-foreground: oklch(0.99 0.006 72);
+  --secondary: oklch(0.908 0.029 40);
+  --secondary-foreground: oklch(0.31 0.023 39);
+  --muted: oklch(0.935 0.017 67);
+  --muted-foreground: oklch(0.5 0.026 46);
+  --accent: oklch(0.711 0.067 18);
+  --accent-foreground: oklch(0.31 0.023 39);
+  --destructive: oklch(0.54 0.18 27);
+  --destructive-foreground: oklch(0.99 0.006 72);
+  --border: oklch(0.824 0.026 55);
+  --input: oklch(0.824 0.026 55);
+  --ring: oklch(0.711 0.067 18);
+  --rose: oklch(0.896 0.03 35);
+  --olive: oklch(0.47 0.035 105);
+  --deep: oklch(0.27 0.027 39);
+  --paper: oklch(0.989 0.007 78);
+  --over-image: oklch(0.99 0.006 72);
+  --radius: 0.25rem;
+}
+
+  * { box-sizing: border-box; border-color: var(--border); }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Nunito Sans", sans-serif; }
+  button, input, textarea { font: inherit; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; }
+  ::selection { background: var(--rose); color: var(--foreground); }
+
+.site-shell { overflow: visible; }
+.hero-intro-stage { position: relative; }
+
+.site-container { width: min(100% - 64px, 1320px); margin-inline: auto; }
+.site-header { height: 86px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 30; background: var(--background); }
+.brand { color: var(--foreground); text-decoration: none; font-family: "Lora", serif; font-style: italic; font-size: 30px; line-height: 1; white-space: nowrap; }
+.brand span { font-family: "Nunito Sans", sans-serif; font-style: normal; font-size: 9px; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; display: block; margin-top: 9px; text-align: center; }
+.desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.5vw, 42px); }
+.nav-link { color: var(--foreground); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; font-weight: 800; text-decoration: none; transition: color .2s; }
+.nav-link:hover, .text-link:hover { color: var(--primary); }
+.menu-toggle { display: none; background: none; border: 0; color: var(--foreground); padding: 8px; cursor: pointer; }
+.mobile-nav { display: none; }
+.editorial-button { display: inline-flex; align-items: center; justify-content: center; gap: 20px; padding: 16px 26px; min-height: 49px; border: 1px solid transparent; text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 900; line-height: 1.3; cursor: pointer; transition: background .25s, color .25s, border-color .25s, transform .25s; border-radius: 0; white-space: nowrap; }
+.editorial-button:hover { transform: translateY(-2px); }
+.editorial-button--primary { background: var(--primary); color: var(--primary-foreground); border-color: var(--primary); }
+.editorial-button--primary:hover { background: var(--deep); border-color: var(--deep); }
+.editorial-button--outline { background: transparent; color: var(--foreground); border-color: var(--foreground); }
+.editorial-button--outline:hover { background: var(--foreground); color: var(--background); }
+.editorial-button--light { background: var(--paper); color: var(--foreground); border-color: var(--paper); }
+.editorial-button--light:hover { background: var(--rose); border-color: var(--rose); }
+.editorial-button--text { background: transparent; color: var(--foreground); border-bottom-color: var(--foreground); padding-inline: 0; padding-block: 10px; }
+.editorial-button--text:hover { color: var(--primary); border-bottom-color: var(--primary); }
+.header-cta { padding: 14px 19px; min-height: 40px; }
+
+.hero { min-height: calc(100svh - 86px); height: calc(100svh - 86px); position: relative; display: flex; align-items: center; color: var(--over-image); isolation: isolate; }
+.hero-photo, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-photo { object-fit: cover; object-position: center 47%; z-index: -2; }
+.mobile-hero-photo { display: none; }
+.hero-shade { z-index: -1; background: linear-gradient(90deg, oklch(0.16 0.026 42 / 82%) 0%, oklch(0.16 0.026 42 / 52%) 45%, oklch(0.16 0.026 42 / 5%) 100%), linear-gradient(0deg, oklch(0.16 0.026 42 / 25%), transparent 45%); }
+.hero-content { padding-top: 16px; padding-bottom: 55px; }
+.eyebrow { font-size: 11px; letter-spacing: .25em; text-transform: uppercase; font-weight: 800; line-height: 1.6; }
+.hero .eyebrow { color: var(--over-image); }
+.hero h1 { font-family: "Lora", serif; font-weight: 400; font-size: clamp(54px, 6vw, 91px); line-height: 1.11; letter-spacing: 0; max-width: 850px; margin: 24px 0 24px; text-wrap: balance; }
+.hero h1 em { font-weight: 400; }
+.hero-copy { font-size: 17px; line-height: 1.75; max-width: 480px; margin: 0 0 32px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-outline { color: var(--over-image); border-color: var(--over-image); }
+.hero-outline:hover { background: var(--over-image); color: var(--foreground); }
+.hero-caption { position: absolute; right: max(32px, calc((100vw - 1320px)/2)); bottom: 30px; font-size: 10px; text-transform: uppercase; letter-spacing: .2em; font-weight: 800; }
+.intro-strip {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in oklch, var(--background) 97%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.intro-strip.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0 10px 28px rgb(50 35 25 / 8%);
+}
+.intro-strip-placeholder {
+  display: none;
+  width: 100%;
+}
+.intro-strip-placeholder.is-active {
+  display: block;
+}
+#ueber-mich {
+  position: relative;
+  z-index: 1;
+  background: var(--background);
+}
+.intro-inner { display: flex; justify-content: space-between; align-items: center; gap: 32px; padding-block: 24px; }
+.intro-inner p { font-family: "Lora", serif; font-style: italic; font-size: clamp(15px, 1.5vw, 19px); margin: 0; }
+.intro-details { display: flex; gap: 36px; font-size: 10px; text-transform: uppercase; letter-spacing: .17em; font-weight: 800; white-space: nowrap; }
+.section { padding-block: clamp(76px, 9vw, 130px); }
+.section-kicker { display: flex; align-items: center; gap: 12px; color: var(--primary); margin-bottom: 25px; }
+.section-kicker::before { content: ''; width: 27px; height: 1px; background: currentColor; }
+.section-title { font-family: "Lora", serif; font-size: clamp(36px, 4.3vw, 64px); font-weight: 400; line-height: 1.23; letter-spacing: 0; margin: 0; text-wrap: balance; }
+.section-title em { color: var(--primary); font-weight: 400; }
+.section-copy { color: var(--muted-foreground); font-size: 16px; line-height: 1.9; }
+.story-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(60px, 9vw, 160px); align-items: center; }
+.story-images { position: relative; padding: 0 12% 10% 0; }
+.story-main { width: 100%; height: 600px; object-fit: cover; object-position: center 25%; display: block; }
+.story-small { position: absolute; width: 37%; height: 260px; object-fit: cover; right: 0; bottom: 0; border: 10px solid var(--background); }
+.story-text { max-width: 540px; }
+.story-text .section-copy { max-width: 490px; margin: 24px 0 29px; }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; padding-block: 25px 35px; border-top: 1px solid var(--border); }
+.facts p { margin: 0; font-family: "Lora", serif; font-style: italic; font-size: 16px; line-height: 1.5; }
+.facts span { display: block; font-family: "Nunito Sans", sans-serif; font-style: normal; text-transform: uppercase; letter-spacing: .15em; font-size: 10px; font-weight: 900; margin-bottom: 8px; color: var(--primary); }
+.moments { background: var(--rose); }
+.moments-head { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 42px; }
+.moments-head .section-title { max-width: 620px; }
+.moments-head .section-copy { max-width: 320px; margin: 0 0 7px; }
+.moment-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.moment { background: var(--paper); padding: clamp(25px, 3vw, 48px); min-height: 350px; display: flex; flex-direction: column; align-items: start; }
+.moment-number { color: var(--primary); font-family: "Lora", serif; font-style: italic; font-size: 17px; }
+.moment-icon { width: 35px; height: 35px; stroke-width: 1.2; margin-top: 40px; color: var(--primary); }
+.moment h3 { font-family: "Lora", serif; font-weight: 400; font-size: 27px; line-height: 1.25; margin: 20px 0 12px; }
+.moment p { color: var(--muted-foreground); line-height: 1.8; font-size: 14px; margin: 0; }
+.moments-foot { display: flex; justify-content: space-between; align-items: center; gap: 25px; margin-top: 31px; }
+.moments-foot p { font-size: 12px; line-height: 1.7; max-width: 520px; margin: 0; }
+.listen-layout { display: grid; grid-template-columns: .83fr 1.17fr; gap: clamp(55px, 8vw, 120px); align-items: center; }
+.listen-copy { max-width: 440px; }
+.listen-copy .section-copy { margin: 24px 0; }
+.listen-links { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 34px; }
+.video-feature, .video-item { margin: 0; min-width: 0; }
+.video-feature video, .video-item video { display: block; width: 100%; background: var(--deep); object-fit: contain; }
+.video-feature video { aspect-ratio: 1318 / 646; }
+.video-feature figcaption, .video-item figcaption { font-family: "Lora", serif; font-style: italic; font-size: 16px; margin-top: 12px; }
+.video-gallery { display: grid; grid-template-columns: 1.4fr .75fr .75fr; gap: 24px; align-items: start; margin-top: 48px; }
+.video-item video { aspect-ratio: 848 / 480; }
+.video-item--portrait video { aspect-ratio: 9 / 12; }
+.listen-image-wrap { position: relative; }
+.listen-image { display: block; width: 100%; height: 540px; object-fit: cover; object-position: center 30%; }
+.listen-image-label { position: absolute; bottom: -20px; left: -25px; background: var(--rose); padding: 17px 25px; font-family: "Lora", serif; font-style: italic; font-size: 18px; }
+.quote-section { background: var(--deep); color: var(--over-image); padding-block: clamp(80px, 9vw, 130px); }
+.quote-layout { display: grid; grid-template-columns: .34fr 1fr; gap: 9vw; }
+.quote-section .section-kicker { color: var(--rose); }
+.quote-section .section-kicker::before { background: var(--rose); }
+.quote-title { font-family: "Lora", serif; font-weight: 400; font-size: 28px; line-height: 1.4; margin: 0; }
+.quote-content blockquote { font-family: "Lora", serif; font-weight: 400; font-size: clamp(24px, 3vw, 42px); line-height: 1.55; margin: 0 0 28px; }
+.quote-content cite { font-size: 11px; letter-spacing: .2em; font-weight: 800; text-transform: uppercase; font-style: normal; }
+.quote-divider { border-top: 1px solid color-mix(in oklab, var(--over-image) 28%, transparent); margin-top: 60px; padding-top: 28px; display: flex; justify-content: space-between; gap: 30px; align-items: start; }
+.quote-divider p { margin: 0; max-width: 560px; font-family: "Lora", serif; font-size: 17px; font-style: italic; line-height: 1.7; }
+.about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(65px, 9vw, 150px); align-items: center; }
+.about-image { width: 100%; height: 590px; object-fit: cover; object-position: center 20%; display: block; }
+.about-copy { max-width: 530px; }
+.about-copy .section-copy { margin: 25px 0 0; }
+.about-signature { font-family: "Lora", serif; font-style: italic; font-size: 33px; color: var(--primary); margin-top: 35px; }
+.contact-section { background: var(--rose); padding-block: clamp(75px, 8vw, 120px); }
+.contact-layout { display: flex; align-items: end; justify-content: space-between; gap: 50px; }
+.contact-layout .section-title { max-width: 850px; }
+.contact-layout .section-copy { max-width: 680px; margin: 22px 0 0; color: var(--foreground); }
+.contact-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-end; flex-shrink: 0; }
+.site-footer { background: var(--deep); color: var(--over-image); padding: 48px 0 30px; }
+.footer-top { display: flex; align-items: start; justify-content: space-between; gap: 30px; border-bottom: 1px solid color-mix(in oklab, var(--over-image) 22%, transparent); padding-bottom: 45px; }
+.site-footer .brand { color: var(--over-image); }
+.footer-top p { margin: 24px 0 0; font-size: 13px; line-height: 1.7; opacity: .78; }
+.footer-links { display: flex; gap: 25px; flex-wrap: wrap; padding-top: 10px; }
+.footer-links a, .footer-bottom a { color: inherit; text-decoration: none; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; }
+.footer-links a:hover, .footer-bottom a:hover { text-decoration: underline; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 25px; padding-top: 25px; opacity: .65; font-size: 11px; letter-spacing: .04em; }
+.footer-bottom div { display: flex; gap: 18px; }
+
+@media (max-width: 1000px) {
+  .desktop-nav { gap: 15px; }
+  .desktop-nav .nav-link { font-size: 10px; }
+  .header-cta { display: none; }
+  .story-layout, .listen-layout, .about-layout { gap: 55px; }
+  .story-main { height: 500px; }
+  .story-small { height: 190px; }
+  .moment { min-height: 370px; }
+  .contact-layout { display: block; }
+  .contact-actions { justify-content: flex-start; margin-top: 30px; }
+}
+@media (max-width: 700px) {
+  .site-container { width: min(100% - 36px, 1320px); }
+  .site-header { height: 72px; }
+  .brand { font-size: 25px; }
+  .brand span { font-size: 8px; }
+  .desktop-nav { display: none; }
+  .menu-toggle { display: block; }
+  .mobile-nav { display: flex; flex-direction: column; gap: 0; position: absolute; top: 72px; left: 0; right: 0; background: var(--background); padding: 8px 18px 22px; border-bottom: 1px solid var(--border); box-shadow: 0 12px 25px oklch(0.3 0.02 40 / 10%); }
+  .mobile-nav a { padding: 14px 5px; border-bottom: 1px solid var(--border); }
+  .mobile-nav .editorial-button { margin-top: 15px; align-self: start; }
+  .hero { height: calc(100svh - 72px); min-height: calc(100svh - 72px); align-items: end; }
+  .desktop-hero-photo { display: none; }
+  .mobile-hero-photo { display: block; object-position: center 24%; }
+  .hero-shade { background: linear-gradient(0deg, oklch(0.16 0.026 42 / 88%) 0%, oklch(0.16 0.026 42 / 48%) 58%, oklch(0.16 0.026 42 / 8%) 100%); }
+  .hero-content { padding-bottom: 65px; }
+  .hero h1 { font-size: clamp(43px, 10vw, 62px); max-width: 590px; margin: 16px 0; }
+  .hero-copy { font-size: 15px; line-height: 1.6; margin-bottom: 26px; }
+  .hero-caption { right: 18px; bottom: 16px; font-size: 8px; }
+  .intro-inner { display: block; padding-block: 22px; }
+  .intro-details { gap: 22px; margin-top: 13px; font-size: 9px; }
+  .section { padding-block: 75px; }
+  .story-layout, .listen-layout, .about-layout { display: flex; flex-direction: column; align-items: stretch; gap: 48px; }
+  .story-images { order: 2; padding-right: 13%; }
+  .story-main { height: 450px; }
+  .story-small { height: 170px; }
+  .story-text { order: 1; }
+  .section-title { font-size: clamp(35px, 8vw, 48px); }
+  .moments-head { display: block; margin-bottom: 30px; }
+  .moments-head .section-copy { margin-top: 18px; }
+  .moment-grid { grid-template-columns: 1fr; }
+  .moment { min-height: auto; padding: 28px; }
+  .moment-icon { margin-top: 20px; }
+  .moment h3 { margin-top: 15px; }
+  .moments-foot { display: block; }
+  .moments-foot .editorial-button { margin-top: 18px; }
+  .listen-image { height: 450px; }
+  .listen-image-label { left: -8px; }
+  .video-gallery { grid-template-columns: 1fr 1fr; gap: 22px 14px; margin-top: 36px; }
+  .video-item:first-child { grid-column: 1 / -1; }
+  .video-item--portrait video { aspect-ratio: 9 / 13; }
+  .quote-layout { display: block; }
+  .quote-title { margin-bottom: 30px; }
+  .quote-divider { display: block; margin-top: 40px; }
+  .quote-divider cite { display: block; margin-top: 16px; }
+  .about-image { height: 520px; }
+  .contact-actions { justify-content: flex-start; }
+  .footer-top, .footer-bottom { flex-direction: column; }
+}
+@media (max-width: 410px) {
+  .hero-actions { gap: 8px; }
+  .hero-actions .editorial-button { padding-inline: 15px; font-size: 9px; gap: 7px; }
+  .hero h1 { font-size: 42px; }
+  .intro-details { flex-wrap: wrap; }
+  .facts { gap: 12px; }
+  .facts p { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+.icon{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.mobile-nav[hidden]{display:none!important}.menu-toggle .icon{width:25px;height:25px}.moment-icon.icon{width:35px;height:35px}.no-js .menu-toggle{display:none!important}
+</style>
+<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header site-container">
+  <a class="brand" href="#start" aria-label="Tonja Music – zum Anfang">Tonja Music<span>Stimme &amp; Gitarre</span></a>
+  <nav class="desktop-nav" aria-label="Hauptnavigation">
+    <a class="nav-link" href="#ueber-mich">Über mich</a>
+    <a class="nav-link" href="#hochzeiten">Für euren Tag</a>
+    <a class="nav-link" href="#hoerproben">Hörproben</a>
+    <a class="nav-link" href="#stimmen">Stimmen</a>
+  </nav>
+  <a class="editorial-button editorial-button--primary header-cta" href="#kontakt">Jetzt anfragen <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
+    <a class="nav-link" href="#ueber-mich">Über mich</a>
+    <a class="nav-link" href="#hochzeiten">Für euren Tag</a>
+    <a class="nav-link" href="#hoerproben">Hörproben</a>
+    <a class="nav-link" href="#stimmen">Stimmen</a>
+    <a class="editorial-button editorial-button--primary" href="#kontakt">Jetzt anfragen <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</header>
+
+<main>
+<div class="hero-intro-stage">
+<section class="hero" id="start" aria-labelledby="hero-title">
+  <img class="hero-photo desktop-hero-photo" src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/d89c6d1b-39bf-4354-bde3-a51c9e5bedcb/wedding.webp" alt="Tonja singt und spielt Gitarre bei einer Trauung" fetchpriority="high">
+  <img class="hero-photo mobile-hero-photo" src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/eef40d95-41e4-4ae8-a09e-cc0ab0356675/portrait3.webp" alt="Tonja mit ihrer Gitarre im Grünen" fetchpriority="high">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="site-container hero-content">
+    <div class="eyebrow">Tonja Music · Sängerin &amp; Gitarristin aus Nürnberg</div>
+    <h1 id="hero-title">Musik, die <em>bleibt.</em><br>Für Momente, die zählen.</h1>
+    <p class="hero-copy">Eure Liebe hat ihren ganz eigenen Klang. Ich begleite euren besonderen Tag mit Stimme, Gitarre und ganz viel Gefühl.</p>
+    <div class="hero-actions">
+      <a class="editorial-button editorial-button--light" href="#kontakt">Musik für euren Tag <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="editorial-button editorial-button--outline hero-outline" href="#hoerproben">Tonja hören <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>
+    </div>
+  </div>
+  <span class="hero-caption">Live. Persönlich. Unvergesslich.</span>
+</section>
+
+<div class="intro-strip-placeholder" aria-hidden="true"></div>
+<div class="intro-strip"><div class="site-container intro-inner">
+  <p>Eine Stimme. Eine Gitarre. Eure Geschichte.</p>
+  <div class="intro-details"><span>100 % live</span><span>Mit Liebe aus Nürnberg</span></div>
+</div></div>
+
+<section class="section" id="ueber-mich">
+<div class="site-container story-layout">
+  <div class="story-images">
+    <img class="story-main" src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/bd8063a5-bdd6-4a3b-b094-a5359a80e43c/tonja-blue-dress.webp" alt="Tonja im blauen Kleid im Grünen" loading="lazy">
+    <img class="story-small" src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/ca34ecba-fac4-4532-9041-8e978565f89d/portrait1.webp" alt="Tonja beim Singen und Gitarrespielen" loading="lazy">
+  </div>
+  <div class="story-text">
+    <div class="eyebrow section-kicker">Schön, dass du da bist</div>
+    <h2 class="section-title">Hallo, ich bin <em>Tonja.</em></h2>
+    <p class="section-copy">Ich bin Sängerin, Gitarristin und Songwriterin aus Nürnberg. Mit meiner Gitarre und einer ausdrucksvollen, sanften Stimme schaffe ich kleine musikalische Augenblicke, die lange in Erinnerung bleiben.</p>
+    <div class="facts"><p><span>Mein Sound</span>Akustisch, ehrlich &amp; voller Gefühl</p><p><span>Eure Songs</span>Persönlich für euch ausgewählt</p></div>
+    <a class="editorial-button editorial-button--text" href="#mehr-ueber-mich">Meine Geschichte <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  </div>
+</div>
+</section>
+</div><!-- /.hero-intro-stage -->
+
+<section class="section moments" id="hochzeiten">
+<div class="site-container">
+  <div class="moments-head"><div><div class="eyebrow section-kicker">Für euren besonderen Tag</div><h2 class="section-title">Der Soundtrack zu <em>eurer Liebe.</em></h2></div><p class="section-copy">Ob leise Gänsehaut oder ein Lächeln mitten im Trubel: Live-Musik macht eure Erinnerungen hörbar.</p></div>
+  <div class="moment-grid">
+    <article class="moment"><span class="moment-number">01 /</span><svg class="moment-icon icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><h3>Zur Trauung</h3><p>Wenn aus einem Augenblick eure gemeinsame Geschichte wird. Mit euren persönlichen Liedern zum Einzug, Ja-Wort und Auszug.</p></article>
+    <article class="moment"><span class="moment-number">02 /</span><svg class="moment-icon icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg><h3>Zum Sektempfang</h3><p>Entspannte Akustikmusik für die ersten Gespräche, Glückwünsche und das Anstoßen auf euch.</p></article>
+    <article class="moment"><span class="moment-number">03 /</span><svg class="moment-icon icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg><h3>Für alles dazwischen</h3><p>Auch bei Geburtstagen, Taufen und anderen besonderen Anlässen sorge ich für den passenden Klang.</p></article>
+  </div>
+  <div class="moments-foot"><p>Gerne spiele ich unplugged ganz ohne Technikaufbau oder mit professionellem Equipment – immer 100 % live, ohne Playback.</p><a class="editorial-button editorial-button--text" href="https://www.tonja-music.com/_files/ugd/77daf6_519a393d6c9e4be989dd9e01b9ded6f2.pdf" target="_blank" rel="noopener noreferrer">Infos &amp; Preise ansehen <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div>
+</section>
+
+<section class="section" id="hoerproben">
+<div class="site-container listen-layout">
+  <div class="listen-copy"><div class="eyebrow section-kicker">Klang statt Worte</div><h2 class="section-title">Hör doch <em>mal rein.</em></h2><p class="section-copy">Von Folk und Indie bis Pop: Ich interpretiere Songs auf meine eigene Weise – auf Deutsch, Englisch, Spanisch und Französisch. Vielleicht ist euer Lied schon dabei.</p><a class="editorial-button editorial-button--outline" href="https://www.youtube.com/@Tonjamusic-vf3fm" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Hörproben auf YouTube</a><div class="listen-links"><a class="editorial-button editorial-button--text" href="https://open.spotify.com/intl-de/artist/6xKALpQu0ROpyEH9z2rQEo" target="_blank" rel="noopener noreferrer">Spotify <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="editorial-button editorial-button--text" href="https://www.tonja-music.com/_files/ugd/77daf6_86a99c1fde5d417eb237765aa83dba26.pdf" target="_blank" rel="noopener noreferrer">Repertoire <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+  <figure class="video-feature"><video controls preload="none" playsinline poster="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/9b2bfeb6-3b93-432e-a914-2235a049fdf2/tonja-wedding-poster.jpg" aria-label="Tonja singt und spielt Gitarre"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/9a6fcbd3-3f87-4c8c-8761-7584c75f5964/tonja-wedding.webm" type="video/webm"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/c25533ac-f659-4cce-a63e-1a1459443a7f/tonja-wedding.mp4" type="video/mp4">Dein Browser unterstützt dieses Video nicht.</video><figcaption>Tonja live · Stimme &amp; Gitarre</figcaption></figure>
+</div>
+<div class="site-container video-gallery" aria-label="Weitere Videos von Tonja">
+  <figure class="video-item"><video controls preload="none" playsinline poster="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/be512043-b4da-4424-9fe2-0cd439c46da8/tonja-live-poster.jpg" aria-label="Live-Musik bei einer Hochzeit"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/5fede40c-d500-482c-87c4-1da111ad3971/tonja-live.webm" type="video/webm"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/2a092dfd-c71e-4225-a4b5-688b6f6d0933/tonja-live.mp4" type="video/mp4">Dein Browser unterstützt dieses Video nicht.</video><figcaption>Musik zur Trauung</figcaption></figure>
+  <figure class="video-item video-item--portrait"><video controls preload="none" playsinline poster="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/1997e68c-715b-4975-bdf6-e4fe9584b990/tonja-portrait-poster.jpg" aria-label="Tonja bei einem Live-Auftritt"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/e61a9f12-d396-4777-a356-888a3f5a823e/tonja-portrait.webm" type="video/webm"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/353c2ef0-51d1-4dab-86a2-018f37ba7d05/tonja-portrait.mp4" type="video/mp4">Dein Browser unterstützt dieses Video nicht.</video><figcaption>Live-Momente</figcaption></figure>
+  <figure class="video-item video-item--portrait"><video controls preload="none" playsinline poster="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/691ad7ae-2b0f-412c-83e8-6fe7e7c25554/tonja-portrait2-poster.jpg" aria-label="Tonja singt bei einem Auftritt"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/28d1811f-27cc-4ac7-9e52-da6c25307979/tonja-portrait2.webm" type="video/webm"><source src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/e916795f-b294-4583-a755-5d84ba224f81/tonja-portrait2.mp4" type="video/mp4">Dein Browser unterstützt dieses Video nicht.</video><figcaption>Tonja auf der Bühne</figcaption></figure>
+</div>
+</section>
+
+<section class="quote-section" id="stimmen"><div class="site-container quote-layout"><div><div class="eyebrow section-kicker">Liebe Worte</div><h2 class="quote-title">Was bleibt, wenn die Musik verklungen ist.</h2></div><div class="quote-content"><blockquote>„Die musikalische Umrahmung von Tonja hat unserer kirchlichen Trauung einen ganz besonderen emotionalen Zauber gegeben und sie dadurch unvergessen gemacht.“</blockquote><cite>Moni &amp; André · Hochzeit</cite><div class="quote-divider"><p>„Vielen Dank dir für deine wunderschöne Stimme. Es war wirklich perfekt! Der Tag war ein Traum.“</p><cite>Sofia &amp; Stefan · Hochzeit</cite></div></div></div></section>
+
+<section class="section" id="mehr-ueber-mich"><div class="site-container about-layout"><div class="about-copy"><div class="eyebrow section-kicker">Die Person hinter der Musik</div><h2 class="section-title">Musik ist für mich <em>Begegnung.</em></h2><p class="section-copy">Meine musikalische Reise begann am musischen Gymnasium in Schwabach. Später folgten Gesangsunterricht, die Gitarre und eigene Songs. Seit 2022 begleite ich Menschen bei den unterschiedlichsten Anlässen – und liebe es, mit Musik genau das auszudrücken, wofür manchmal die Worte fehlen.</p><p class="section-copy">Am schönsten ist es, wenn aus einem Lied euer ganz persönlicher Moment wird.</p><div class="about-signature">Eure Tonja</div></div><img class="about-image" src="https://tonja-music-creaid-media.lovable.app/__l5e/assets-v1/ca34ecba-fac4-4532-9041-8e978565f89d/portrait1.webp" alt="Tonja beim Musizieren auf der Bühne" loading="lazy"></div></section>
+
+<section class="contact-section" id="kontakt"><div class="site-container contact-layout"><div><div class="eyebrow section-kicker">Lasst uns sprechen</div><h2 class="section-title">Erzählt mir von <em>eurem Tag.</em></h2><p class="section-copy">Wann und wo feiert ihr? Welche Lieder liegen euch am Herzen? Schreibt mir eure Ideen – ich freue mich darauf, euch kennenzulernen.</p></div><div class="contact-actions"><a class="editorial-button editorial-button--primary" href="mailto:tonjamailbox@gmail.com?subject=Anfrage%20Hochzeitsmusik">E-Mail schreiben <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="editorial-button editorial-button--outline" href="https://wa.me/491787871106" target="_blank" rel="noopener noreferrer">WhatsApp <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
+</main>
+
+<footer class="site-footer"><div class="site-container"><div class="footer-top"><div><a class="brand" href="#start">Tonja Music<span>Stimme &amp; Gitarre</span></a><p>Live-Musik für Hochzeiten und besondere Momente.<br>Aus Nürnberg, mit ganzem Herzen.</p></div><div class="footer-links"><a href="https://www.instagram.com/tonja_music_official/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@Tonjamusic-vf3fm" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://open.spotify.com/intl-de/artist/6xKALpQu0ROpyEH9z2rQEo" target="_blank" rel="noopener noreferrer">Spotify</a><a href="mailto:tonjamailbox@gmail.com?subject=Anfrage%20Hochzeitsmusik">E-Mail</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Tonja Music</span><div><a href="https://www.tonja-music.com/" target="_blank" rel="noopener noreferrer">Impressum auf Originalseite</a><a href="https://www.tonja-music.com/_files/ugd/77daf6_680eb48be2f54daaa3e8ce508969db8c.pdf" target="_blank" rel="noopener noreferrer">Datenschutz</a></div></div></div></footer>
+</div>
+<script>
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('mobileNav');
+const menuIcon=`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+const closeIcon=`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>`;
+function setOpen(open){nav.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');toggle.innerHTML=open?closeIcon:menuIcon;}
+toggle.addEventListener('click',()=>setOpen(toggle.getAttribute('aria-expanded')!=='true'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+<script>
+(function () {
+  const strip = document.querySelector('.intro-strip');
+  const placeholder = document.querySelector('.intro-strip-placeholder');
+  const about = document.getElementById('ueber-mich');
+
+  if (!strip || !placeholder || !about) return;
+
+  let startY = 0;
+  let endY = 0;
+  let stripHeight = 0;
+
+  function measure() {
+    strip.classList.remove('is-fixed');
+    placeholder.classList.remove('is-active');
+    placeholder.style.height = '0px';
+
+    const stripRect = strip.getBoundingClientRect();
+    const aboutRect = about.getBoundingClientRect();
+
+    stripHeight = strip.offsetHeight;
+    startY = window.scrollY + stripRect.top;
+
+    // The bar stays fixed while the complete "Hallo, ich bin Tonja" section
+    // moves through the viewport. It releases when that section has passed.
+    endY = window.scrollY + aboutRect.bottom - stripHeight;
+
+    placeholder.style.height = stripHeight + 'px';
+    update();
+  }
+
+  function update() {
+    const y = window.scrollY;
+
+    if (y >= startY && y < endY) {
+      strip.classList.add('is-fixed');
+      placeholder.classList.add('is-active');
+    } else {
+      strip.classList.remove('is-fixed');
+      placeholder.classList.remove('is-active');
+    }
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', measure);
+  window.addEventListener('load', measure);
+
+  // Initial calculation for locally opened HTML files.
+  requestAnimationFrame(measure);
+})();
+</script>
+
+</body>
+</html>
